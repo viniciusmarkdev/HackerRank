@@ -31,11 +31,7 @@ public class calendario {
 		
 		
 		
-		if(Calendar.DAY_OF_MONTH == 28) {
-			
-			String nome = "SÁBADO";
-			System.out.println(nome);
-		}
+		
 		
 		/*
 		 * O método displayName retorna a representação do campo que 
