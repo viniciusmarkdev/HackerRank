@@ -7,8 +7,7 @@ public class matrizReversa {
 	
 	
 	
-		
-		public static List<Integer> reverseArray(List<Integer>a){
+public static List<Integer> reverseArray(List<Integer>a){
 			
 			 
 			int i = 0;
@@ -19,10 +18,10 @@ public class matrizReversa {
 	
 				 
 				
-				  
+	System.out.println( reversao.add(a.get(a.size()-1-i)));	  
 
  
- reversao.add(a.get(a.size()-1-i));
+           
 
 			
 				 
