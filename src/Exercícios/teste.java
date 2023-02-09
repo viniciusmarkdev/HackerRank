@@ -6,21 +6,23 @@ public class teste {
 	
 	public static void main(String[] args) {
 		
-		System.out.println("Digite uma frase");
-		Scanner scanner = new Scanner(System.in);
+        String teste = "abcde";
 		
-		String entrada;
+	//	System.out.println(teste.substring(4,6));
+		
+
+      
+        
+        int k = 6;
+        
+        for( int i = 3 ; i<=k ; i++) {
+        	
+        	System.out.println(i);
+        }
+        
+	    		
 		
 		
-		entrada = scanner.next();
-	
-	
-		
-		System.out.println(entrada);
-		
-	
-		
-		System.out.println(	entrada.charAt(3));
 		
 	}
 

@@ -15,7 +15,7 @@ public class SubstringJava {
 	     
 	  
 	    
-	    System.out.println(S.substring(start, end));
+	     System.out.println(S.substring(start, end));
 		
 		
 	}
