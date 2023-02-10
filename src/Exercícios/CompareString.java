@@ -72,7 +72,7 @@ public class CompareString {
 	      /*
 	       * 
 	       * Aqui é efetuado a mesma lógica para ver 
-	       * a maior substring lexograficamente.
+	       * a maior substring lexicograficamente.
 	       *  
 	       * 
 	       * */
