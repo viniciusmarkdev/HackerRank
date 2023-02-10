@@ -5,40 +5,79 @@ import java.util.Scanner;
 public class CompareString {
 
 	public static String getSmallestAndLargest(String s, int k) {
-		String smallest = "";
-		String largest = " ";
+	
+		 String sm = s.substring(0, k);
+	     String lg = s.substring(0, k);
 
 		for (int i = 0; i <= s.length()-k; i++) {
 
 			
 		    /*Passamos a substring para um váriavel tempo , a cada 
 		     * loop esse varível muda*/
-			String temp = s.substring(i,i+k);
+			String atual = s.substring(i,i+k);
 			
 			/*
-			 *Se a váriavel temp vir depois lexograficamnete que 
-			 *smallest a várivel temp é a menor.O compareTo
-			 *retorna um número inteiro maior que zero  se isso for 
-			 *verdadeiro.
 			 *
+			 *
+			 *Se atual vir antes que sm for verdadeiro
+			 *sm = atual. Caso contrário ,sm = sm.
+			 *
+			 *Exemplo : se passarmos
+			 *a String "abcd", dividirmos 
+			 *a string de 2 e 2 e  atual for 
+			 *
+			 *atual = "ab"
+			 *
+			 *e sm = "ab"
+			 *
+			 *O valor da comparação será falso
+			 *e sm = sm
+			 *
+			 *No próximo valor de atual que será
+			 *"cd" 
+			 *
+			 * e a comparação será 
+			 * 
+			 * "bc".compareTo("ab");
+			 * 
+			 * que também será falso  
+			 * 
+			 * e sm = "ab"
+			 * 
+			 * No próximo  e ultimo loop
+			 * 
+			 * o valor de atual será cd
+			 * 
+			 * e a comparação será 
+			 * 
+			 * "cd".compareTo("ab");
+			 * 
+			 * O valor será falso 
+			 * 
+			 * sm ainda será "ab"
+			 * 
+			 * logo a menor substring lexograficamente
+			 * será "ab"
+			 * 
+			 * 
 			 * */
 			
 			
+		       
 			
-			smallest = temp.compareTo(smallest) < 0 ? temp:smallest;
-	       
+			 sm = atual.compareTo(sm) < 0 ? atual : sm;
+			
+			
 	    
 	      /*
 	       * 
-	       *  Se a váriavel temp vir antes  lexograficamnete que 
-			 *smallest a várivel temp é a maior.O compareTo
-			 *retorna um número inteiro menor que zero  se isso for 
-			 *verdadeiro.
-	       * 
+	       * Aqui é efetuado a mesma lógica para ver 
+	       * a maior substring lexograficamente.
+	       *  
 	       * 
 	       * */
 	     
-			largest = temp.compareTo(largest) > 0 ? temp:largest;
+			 lg = atual.compareTo(lg) > 0 ? atual : lg; 
 	      
 	      
 	       
@@ -86,15 +125,9 @@ public class CompareString {
 		   * */
           
 					
-				
-				
 			
-		
-		
 
-		
-
-		return smallest + "\n" + largest;
+		return sm + "\n" + lg;
 	}
 
 	public static void main(String[] args) {
