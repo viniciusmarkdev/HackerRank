@@ -14,11 +14,42 @@ public class Anagram {
     	char [] separarB = b.toCharArray();
     	boolean ret = false;
     	int k = 0 ;
+    	int l = 0 ;
+    	
+    	int m = 0;
+    	
+    	
+    	for(int p=0 ; p< a.length() ; p++) {
+    		
+    		
+    		
+    		for(int q = p+1 ; q< a.length() ; q++) {
+    			
+    			
+    			if(separarA[p] == separarA[q]) {
+    				
+    				m++;
+    				
+    				
+    			}
+    			
+    			if(separarB[p]==separarB[q]) {
+    				
+    				l++;
+    			}
+    		
+    		}
+    		
+    		
+    		
+    		
+    	}
+    	
     	
     	
     
+    
     	for(int i = 0 ; i<a.length();i++) {
-    		
     		
     		for(int j = 0 ; j<b.length(); j++) {
     			
@@ -27,18 +58,23 @@ public class Anagram {
     				k++;
     				
     				
-    				
-    				
-    				
     			}
+    			
+    			
+    			
+    		
+    		
+    			
     			
     		   
     			
-    			if(k==a.length() && k==b.length() ) {
+    			if(k==a.length() && k==b.length() && l==m  ) {
     				
     				ret = true;
     				
     			}
+    			
+    			
     			
     			
     			
