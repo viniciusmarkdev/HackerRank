@@ -1,17 +1,18 @@
 package Exercícios;
 
+import java.util.regex.Pattern;
+
 public class teste {
 	
 	
 	public static void main(String[] args) {
 		
 		
-		String a  = "carro";
 		
+		String regex = "A&@##";
 		
-		String b =  a.toUpperCase();
+		Pattern padrão = Pattern.compile(regex);
 		
-		System.out.println(b);
 		
 	}
 	
