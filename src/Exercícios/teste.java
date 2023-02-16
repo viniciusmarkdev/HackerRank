@@ -9,7 +9,7 @@ public class teste {
 		
 		
 		
-		String regex = "A&@##";
+		String regex = "A";
 		
 		Pattern padrão = Pattern.compile(regex);
 		
