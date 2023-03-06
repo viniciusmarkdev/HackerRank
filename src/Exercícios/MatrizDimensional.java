@@ -33,7 +33,60 @@ public class MatrizDimensional {
 			
 			System.out.println(temp);
 		}
-
+		
+		//Matriz
+		
+		double [][] notaAlunos = new double[3][4];
+		
+		notaAlunos[0][0] = 9.0;
+		notaAlunos[0][1] = 8.0;
+		notaAlunos[0][2] = 6.0;
+		notaAlunos[0][3] = 4.0;
+		
+		notaAlunos[1][0] = 9.0;
+		notaAlunos[1][1] = 8.0;
+		notaAlunos[1][2] = 6.0;
+		notaAlunos[1][3] = 4.0;
+		
+		notaAlunos[2][0] = 6.0;
+		notaAlunos[2][1] = 2.0;
+		notaAlunos[2][2] = 4.0;
+		notaAlunos[2][3] = 10.0;
+	
+		
+		System.out.println(notaAlunos.length);
+		
+		System.out.println();
+	
+		for(int i =0 ; i<notaAlunos.length ; i++) {
+			
+			for(int j=0; j<notaAlunos[i].length;j++) {
+				
+				System.out.print(notaAlunos[i][j]+" ");
+			}
+			
+			System.out.println();
+			
+		}
+		
+		//Media
+		
+		System.out.println("Calculando a media da nota de cada aluno ");
+		System.out.println();
+		
+		double[][]notaAlunos2 = {{1,2,3,4},{1,2,3,4}};
+		double soma;
+        for(int i =0 ; i<notaAlunos2.length ; i++) {
+			
+        	soma = 0;
+			for(int j=0; j<notaAlunos2[i].length;j++) {
+				
+				soma+=notaAlunos2[i][j];
+			}
+			
+			System.out.println("A nota do aluno "+(1+i)+ " é = "+soma/4);
+			
+		}
 	}
 
 }
