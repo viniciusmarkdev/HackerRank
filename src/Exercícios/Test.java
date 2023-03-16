@@ -1,11 +1,15 @@
 package Exercícios;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Test {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		 List<List<Integer>> arr = new ArrayList<>();
 		 
@@ -21,10 +25,19 @@ public class Test {
 		 
 		 System.out.println(arr);
 		 
+		
+		
 		 
+	 List<Integer> c=new ArrayList<Integer>();
+	
+	c.add(2);
+	c.add(1);
+	
+	System.out.println(c.get(0));
+
 		 
-		 
-		 
+		
+		
 		 
 	}
 
