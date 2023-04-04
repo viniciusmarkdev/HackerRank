@@ -9,36 +9,25 @@ import java.util.Scanner;
 
 public class Test {
 	
-	public static void main(String[] args) throws IOException {
-		
-		 List<List<Integer>> arr = new ArrayList<>();
-		 
-		 List<Integer> str = new ArrayList<>();
-		 List<Integer> inteiros = new ArrayList<>();
-		
-		 arr.add(str);
-		 arr.add(inteiros);
-		 str.add(1);
-		 str.add(2);
-		 str.add(3);
-		 inteiros.add(0);
-		 
-		 System.out.println(arr);
-		 
-		
-		
-		 
-	 List<Integer> c=new ArrayList<Integer>();
+	double valor ;
 	
-	c.add(2);
-	c.add(1);
-	
-	System.out.println(c.get(0));
-
-		 
+	public boolean aplicaDesconto(double porcentagem) {
 		
+		if(porcentagem>0.3) {
+			
+			return false;
+		}
 		
-		 
+		this.valor -=this.valor*porcentagem;
+		return true;
+	}
+		
+	public static void main(String[] args) {
+		
+		Test test = new Test();
+			
+		System.out.println(!test.aplicaDesconto(0.1));
+	     
 	}
 
 }
