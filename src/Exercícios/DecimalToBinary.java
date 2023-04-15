@@ -8,7 +8,7 @@ public class DecimalToBinary {
 	public static void main(String[] args) {
 		
 		
-		convert(1);
+		convert(1000);
 		
 		
 	}
@@ -20,12 +20,11 @@ public class DecimalToBinary {
 		public static void convert(int n ) {
 			
 			
-			int aux = n;
 			
 		
 			
 		
-				for( int  i=0 ; i<=n; i++) {
+				for( int  i=0 ; n>0; i++) {
 				
 			   
 				
@@ -35,7 +34,7 @@ public class DecimalToBinary {
 					 numerosBinarios.add(1);
 				 }
 								
-				if(n%2==0) {
+				 else if(n%2==0) {
 					
 					numerosBinarios.add(0);
 					
@@ -47,76 +46,7 @@ public class DecimalToBinary {
 				 n=n/2;
 				 
 				 
-				 
-				 if(i>n && n%2==0) {
-					 
-					 
-						numerosBinarios.add(0);
-					 
-				 }
-				 
-				 if(i>n && n%2==1 ) {
-					 
-					 
-						numerosBinarios.add(1);
-
-					
-						
-					 
-				 }
-				 
-				 
-				 if(i==n && n%2==1 ) {
-					 
-					 
-						numerosBinarios.add(1);
-
-					
-						
-					 
-				 }
-				 
-				 if(i==n && n%2==0) {
-					 
-					 
-						numerosBinarios.add(0);
-						
-
-					
-						
-					 
-				 }
-				 
-				 
-				 
-				 
-				    
-				
-				
 			
-				 if(i==n) {
-						
-					   int one= n=n/2;
-					    
-					    if(one== 1) {
-					    	
-					    	numerosBinarios.add(1);
-					    	
-					    }
-					    
-					
-					    
-					
-					    
-					    
-					  
-					    
-					   
-						break;
-						
-						
-					}
-				 
 				
 			
 				 
@@ -126,14 +56,8 @@ public class DecimalToBinary {
 				
 
 				
-				 String convertToString = String.valueOf(aux);
-				    
-				    if( convertToString.length()==2 ||  convertToString.length()==3   
-				    		&& aux>=64 
-				    		 ) {
-				    	
-				    	numerosBinarios.add(1);
-				    }
+			
+				   
 			
 				
 	 

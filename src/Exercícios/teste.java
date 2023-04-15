@@ -9,17 +9,8 @@ public class teste {
 
 		
 		
-		int div = 233;  
-		
-		int divInt = div/2;    //resto 1
-		
-		 int rest= div%2;         //resto 0
-		
-		System.out.println(divInt);
-		System.out.println(rest);
-		
-		
-		                       // resto 0 
+	  int div = 1%2;
+	   System.out.println(div);
 		
 		                     
 		 
