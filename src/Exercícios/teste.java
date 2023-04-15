@@ -7,10 +7,60 @@ public class teste {
 
 	public static void main(String[] args) {
 
+		
+		
+		int div = 233;  
+		
+		int divInt = div/2;    //resto 1
+		
+		 int rest= div%2;         //resto 0
+		
+		System.out.println(divInt);
+		System.out.println(rest);
+		
+		
+		                       // resto 0 
+		
+		                     
+		 
+	    //div novamento por 2
+		
+		
+		
+
+/*
+ * 
+ *  int a = 7;
+    int b = 3;
+    int c = 0;
+    int d=-5;
+    int x=0;
+    
+    x=a+b*c+d;
+    
+    System.out.println(x);
+ * 
+ */
+   
+    
+    
+    /*
+    
+    String  a = "1";
+    String b="2";
+    String x = "5";
+    
+    x = a+b;
+    
+    System.out.println(x);
+    
+    
+    
 	
     //Tentativa de resolver o array 2D ampulheta 
-		
-	int [][] b = {{1,1,1,1,1,1},
+    
+	/*
+	 * int [][] b = {{1,1,1,1,1,1},
 			      {1,1,1,1,1,1},
 			      {1,1,1,1,1,1},
 			      {1,1,1,1,1,1},
@@ -80,6 +130,9 @@ public class teste {
 		}
 	 
 	 System.out.println(somaTotal);
+	 * 
+	 */
+	
 	}
 
 }
