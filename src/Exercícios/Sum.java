@@ -4,7 +4,7 @@ public class Sum {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(soma(1));
+		System.out.println(soma(10));
 		
 	}
 	
@@ -17,6 +17,7 @@ public class Sum {
 			soma+=i;
 		}
 
+		
 		return soma;
 	}
 	

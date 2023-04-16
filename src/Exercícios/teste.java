@@ -9,7 +9,7 @@ public class teste {
 
 		
 		
-	  int div = 1%2;
+	  int div = 1/2;
 	   System.out.println(div);
 		
 		                     

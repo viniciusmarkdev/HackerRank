@@ -8,7 +8,7 @@ public class DecimalToBinary {
 	public static void main(String[] args) {
 		
 		
-		convert(1000);
+		convert(1000000000);
 		
 		
 	}
